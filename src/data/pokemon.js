@@ -92,7 +92,7 @@ export default  [
       weight: 22,
       type: "Psychic",
       sprite: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/245.png",
-      description: "????",
+      description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut",
       id: 21
     },
     {
@@ -100,7 +100,7 @@ export default  [
       weight: "122",
       type: "Grass",
       sprite: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/311.png",
-      description: "????",
+      description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut",
       id: 22
     },
     {
@@ -108,15 +108,15 @@ export default  [
       weight: "1234",
       type: "Psychic",
       sprite: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/333.png",
-      description: "????",
+      description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut",
       id: 23
     },
     {
-      name: "asdfsasdf",
+      name: "Coolmon",
       weight: "123",
       type: "Water",
       sprite: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/200.png",
-      description: "????",
+      description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut",
       id: 24
     }
   ]
