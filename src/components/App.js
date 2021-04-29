@@ -1,5 +1,4 @@
 import React, { Component } from 'react'
-import pokeData from '../data/pokemon'
 
 //Components
 import Navbar  from './Navbar'
@@ -8,10 +7,23 @@ import Home from './Home'
 
 export default class App extends Component {
 
+ 
+
   state = {
     display: "Home",
     searchText: "",
-    pokemons: pokeData
+    pokemons: []
+  }
+
+  componentDidMount(){
+    console.warn("running didMount....")
+    fetch("http://localhost:3000/pokemon")
+      .then(res => res.json())
+      .then(pokeData => this.setState({pokemons: pokeData}))
+  }
+
+  createPokemon = (pokemonObj) => {
+    this.setState({pokemons: [pokemonObj, ...this.state.pokemons]})
   }
 
   changeToPokemon = () => {
@@ -34,17 +46,19 @@ export default class App extends Component {
     this.setState({
       pokemons: newPokemon
     })
-
   }
 
 
   render(){
+
    const filteredPokemon = this.state.pokemons.filter(poke => poke.name.includes(this.state.searchText))
+
+
     return (
       <div className="bg-dark">
         <Navbar handleSearchText={this.handleSearchText} display={this.state.display} changeToHome={this.changeToHome} />
         { this.state.display === "Home" ? <Home changeToPokemon={this.changeToPokemon}/> : null }
-        { this.state.display === "Pokemon" ? <PokeContainer deletePokemon={this.deletePokemon} pokemons={filteredPokemon}  /> : null}
+        { this.state.display === "Pokemon" ? <PokeContainer createPokemon={this.createPokemon} deletePokemon={this.deletePokemon} pokemons={filteredPokemon}  /> : null}
       </div>
     )
   }
