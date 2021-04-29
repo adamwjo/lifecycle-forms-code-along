@@ -119,6 +119,38 @@
       "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/200.png",
       "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut",
       "id": 24
+    },
+    {
+      "name": "Supermon",
+      "weight": "12",
+      "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/246.png",
+      "type": "Psychic",
+      "description": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/2.png",
+      "id": 25
+    },
+    {
+      "name": "Hopethisworksmon",
+      "weight": "12",
+      "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/334.png",
+      "type": "Psychic",
+      "description": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/3.png",
+      "id": 26
+    },
+    {
+      "name": "sdfasfdsdfasfda",
+      "weight": "12",
+      "sprite": "3232324",
+      "type": "Grass",
+      "description": "dsafasdfasdf",
+      "id": 27
+    },
+    {
+      "name": "asdfasdfasdfdfsa",
+      "weight": "12",
+      "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/2.png",
+      "type": "Water",
+      "description": "sdafasdf",
+      "id": 28
     }
   ]
 }
